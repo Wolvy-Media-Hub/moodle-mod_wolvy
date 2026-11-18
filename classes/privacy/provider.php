@@ -40,7 +40,6 @@ class provider implements
         \core_privacy\local\metadata\provider,
         \core_privacy\local\request\plugin\provider,
         \core_privacy\local\request\core_userlist_provider {
-
     /**
      * Describe what is stored and sent.
      *

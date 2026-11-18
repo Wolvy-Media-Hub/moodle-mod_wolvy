@@ -23,7 +23,6 @@
  * @license   https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class mod_wolvy_generator extends testing_module_generator {
-
     /**
      * Create an instance with a valid video ID unless one is given.
      *

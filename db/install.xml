@@ -12,7 +12,7 @@
         <FIELD NAME="intro" TYPE="text" NOTNULL="false" SEQUENCE="false"/>
         <FIELD NAME="introformat" TYPE="int" LENGTH="4" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
         <FIELD NAME="videoid" TYPE="char" LENGTH="64" NOTNULL="true" SEQUENCE="false" COMMENT="The video's ID in Wolvy"/>
-        <FIELD NAME="aspect" TYPE="char" LENGTH="10" NOTNULL="true" DEFAULT="" SEQUENCE="false" COMMENT="Width:height; empty uses the filter's default"/>
+        <FIELD NAME="aspect" TYPE="char" LENGTH="10" NOTNULL="true" SEQUENCE="false" COMMENT="Width:height; empty uses the filter's default"/>
         <FIELD NAME="completionpercent" TYPE="int" LENGTH="3" NOTNULL="true" DEFAULT="0" SEQUENCE="false" COMMENT="Complete when this much was watched in one visit; 0 = rule off"/>
         <FIELD NAME="timecreated" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
         <FIELD NAME="timemodified" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>

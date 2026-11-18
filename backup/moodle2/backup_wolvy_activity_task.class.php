@@ -34,7 +34,6 @@ require_once($CFG->dirroot . '/mod/wolvy/backup/moodle2/backup_wolvy_stepslib.ph
  * @license   https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class backup_wolvy_activity_task extends backup_activity_task {
-
     /**
      * No particular settings.
      */

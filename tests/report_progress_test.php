@@ -35,7 +35,6 @@ require_once($CFG->libdir . '/completionlib.php');
  * @covers    \mod_wolvy\completion\custom_completion
  */
 final class report_progress_test extends \externallib_advanced_testcase {
-
     /**
      * Call the web service as the current user and clean its answer.
      *
