@@ -34,7 +34,7 @@ Stored in Moodle: the best share watched per student and activity, with the time
 
 ## Development
 
-- `amd/build/progress.min.js` is a hand-written equivalent of `amd/src/progress.js`. Regenerate it with `npx grunt amd` in a Moodle checkout before a release.
+- After changing `amd/src/`, rebuild with `npx grunt amd --root=mod/wolvy` in a Moodle checkout (`public/mod/wolvy` on 5.1+). CI checks that `amd/build/` is up to date and uploads Moodle 5.3's build as the artifact `amd-build`.
 - Tests: `vendor/bin/phpunit --testsuite mod_wolvy_testsuite`.
 
 ## Licence
