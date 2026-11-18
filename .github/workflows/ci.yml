@@ -104,6 +104,14 @@ jobs:
         run: moodle-plugin-ci grunt --max-lint-warnings 0
 
       # The JavaScript build Moodle's own tooling makes, to replace a hand-written one.
+      - name: Build the AMD modules with Moodle's grunt
+        if: ${{ always() && matrix.moodle-branch == 'MOODLE_503_STABLE' && matrix.database == 'pgsql' }}
+        working-directory: moodle
+        run: |
+          source "$NVM_DIR/nvm.sh"
+          nvm use
+          npx grunt amd --root=public/mod/wolvy || true
+
       - name: Upload the AMD build
         if: ${{ always() && matrix.moodle-branch == 'MOODLE_503_STABLE' && matrix.database == 'pgsql' }}
         uses: actions/upload-artifact@v7
