@@ -70,14 +70,13 @@ export const init = (cmid, needed, best) => {
         Ajax.call([{methodname: 'mod_wolvy_report_progress', args: {cmid: cmid, percent: percent}}])[0]
             .then((result) => {
                 stored = Math.max(stored, result.percent);
-                if (progressNode) {
-                    return getString('yourprogress', 'mod_wolvy', {best: stored, needed: needed})
-                        .then((text) => {
-                            progressNode.textContent = text;
-                            return text;
-                        });
+                return progressNode ? getString('yourprogress', 'mod_wolvy', {best: stored, needed: needed}) : null;
+            })
+            .then((text) => {
+                if (text && progressNode) {
+                    progressNode.textContent = text;
                 }
-                return result;
+                return text;
             })
             .catch(() => {
                 // Not fatal: the next report carries the same or a higher value.
