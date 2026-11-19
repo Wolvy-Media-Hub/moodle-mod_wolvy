@@ -2,7 +2,7 @@
 
 An activity that shows one protected [Wolvy](https://wolvy.net) video, and can be marked complete when the student has watched a set share of it.
 
-- **Per-student watermark.** The player carries a viewer token signed on your Moodle server for the student watching, as in the [Wolvy video filter](https://github.com/MAIM-For-Digital-Solutions/moodle-filter_wolvy), which this activity uses.
+- **Per-student watermark.** The player carries a viewer token signed on your Moodle server for the student watching, as in the [Wolvy video filter](https://github.com/Wolvy-Media-Hub/moodle-filter_wolvy), which this activity uses.
 - **Completion: "Student must watch at least N %".** The player counts seconds actually played, each once, so skipping ahead or replaying one part does not add to it. The best share from any single visit is kept per student.
 - **Also:** "View" completion, course reset, backup and restore with or without user data, and the Privacy API (export and delete).
 

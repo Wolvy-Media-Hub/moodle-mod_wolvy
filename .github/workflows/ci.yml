@@ -62,7 +62,7 @@ jobs:
           echo "NVM_DIR=$HOME/.nvm" >> $GITHUB_ENV
 
       - name: Add the Wolvy video filter (a dependency)
-        run: moodle-plugin-ci add-plugin MAIM-For-Digital-Solutions/moodle-filter_wolvy
+        run: moodle-plugin-ci add-plugin Wolvy-Media-Hub/moodle-filter_wolvy
 
       - name: Install moodle-plugin-ci
         run: moodle-plugin-ci install --plugin ./plugin --db-host=127.0.0.1
