@@ -9,7 +9,7 @@ An activity that shows one protected [Wolvy](https://wolvy.net) video, and can b
 ## Requirements
 
 - Moodle 4.5 (LTS) to 5.3 (LTS).
-- The Wolvy video filter (`filter_wolvy`), installed and configured with your account ID and signing secret. The filter does not have to be switched on for this activity to work.
+- The Wolvy video filter (`filter_wolvy`) 1.1.0 or later, installed and configured with your account ID and signing secret. Since 1.1.0 it signs each token for the one video it plays, which Wolvy requires. The filter does not have to be switched on for this activity to work.
 - For the completion rule: the **Player API** switched on for your account in the Wolvy dashboard. Without it the player reports nothing; teachers see a warning on the activity page after 15 seconds.
 
 ## Install

@@ -25,10 +25,10 @@
 defined('MOODLE_INTERNAL') || die();
 
 $plugin->component = 'mod_wolvy';
-$plugin->version = 2026111800;
-$plugin->release = '1.0.0';
+$plugin->version = 2026112200;
+$plugin->release = '1.0.1';
 $plugin->requires = 2024100700; // Moodle 4.5.
 $plugin->supported = [405, 503]; // Moodle 4.5 (LTS) to 5.3 (LTS).
 $plugin->maturity = MATURITY_STABLE;
 // The account ID, the signing secret and the player markup live in the filter.
-$plugin->dependencies = ['filter_wolvy' => 2026111800];
+$plugin->dependencies = ['filter_wolvy' => 2026112200];
